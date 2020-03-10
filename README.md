@@ -478,8 +478,3 @@ class 选择器在HTML中以class属性表示, 在 CSS 中，类选择器以一�
 p.center {text-align:center;}
 
 
-
-## 下拉菜单
-
-
-
