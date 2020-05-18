@@ -1,6 +1,6 @@
-* {
-  box-sizing: border-box;
-}
+/** {*/
+/*  box-sizing: border-box;*/
+/*}*/
 
 html, body {
   padding: 0;
@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  width: 100vw;
+  /*width: 100vw;*/
   height: 100vh;
   perspective: 100px;
   transform-style: preserve-3d;
@@ -43,7 +43,13 @@ li{
   /*transition: 0.3s;*/
 }
 
-.header-bar:hover {
+a{
+  color: white;
+  text-decoration: none;
+}
+
+
+a:hover, .header-bar:hover {
   color: #9fcdff;
   /*text-decoration: underline;*/
   /*background-color: #9fcdff;*/
