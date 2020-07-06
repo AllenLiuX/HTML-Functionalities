@@ -99,7 +99,7 @@ body {
 }
 
 .list-item:hover .item-image::before  {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .item-image {
@@ -117,7 +117,7 @@ body {
   width: 100%;
   height: 100%;
   transition: all 1s ease;
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, .3);
 }
 
 .item-image img {
@@ -232,3 +232,15 @@ body {
   font-family: Ubuntu Mono, monospace;
   /* text-transform: uppercase; */
 }
+
+
+/*------------------*/
+/*.bn-alp { width:100%; height:400px; position:relative; }*/
+/*.bn-alp ul,.bn-alp li { margin:0; padding:0; list-style:none; }*/
+/*.bn-alp .box { height:100%; position:relative; }*/
+/*.bn-alp .box li { width:100%; height:400px; background-position:50% 50%; background-size:cover; position:absolute; top:0; left:0; z-index:10; }*/
+/*.bn-alp .box li.on { z-index:99; }*/
+/*.bn-alp .box li img.bg { display:none; }*/
+/*.bn-alp .i { bottom:5px; left:50%; margin-left:-50px; text-align:center; position:absolute; z-index:100;}*/
+/*.bn-alp .i i { display:inline-block; margin-right:10px; width:16px; height:16px; background: #000; cursor:pointer; }*/
+/*.bn-alp .i i.on { background:red; }*/

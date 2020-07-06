@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="static/timeline.css">
     <script src="static/jquery-3.4.1.js"></script>
     <script src="static/popper-2.1.0.js"></script>
+    <script src="main.js"></script>
     <title>Vincent's Blog</title>
 </head>
-<body>
+<body onload="background()">
 <header>
     <ul>
         <li class="header-bar">Home</li>
@@ -24,7 +25,7 @@
 <main>
     <section class="list-item">
         <div class="item-image">
-            <img src="images/back2.JPG">
+            <img id="background" src="images/back2.JPG">
         </div>
         <div class="item-text">
             <div class="item-title">Welcome to Vincent's Blog!</div>
@@ -95,10 +96,15 @@
               <div class="timeline-img"></div>
               <div class="timeline-content timeline-card js--fadeInRight">
                 <div class="timeline-img-header" id="c">
-                  <h2 id="black">C projects</h2>
+                  <h2 id="black">C Projects</h2>
                 </div>
                 <div class="date">Jan - Jun 2020</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+                <p>
+                    <b>Multithreading Lock</b>
+                    <br><b>Compressed TCP Communication</b>
+                    <br><b>File System Fundamental Manipulation</b>
+                    <br><b>TCP implementation on UDP by Socket</b>
+                </p>
                 <a class="bnt-more" href="javascript:void(0)">More</a>
               </div>
             </div>
@@ -117,14 +123,14 @@
                 </div>
             </div>
 
-            <div class="timeline-item">
-              <div class="timeline-img"></div>
-              <div class="timeline-content js--fadeInLeft">
-                <div class="date">3 JUN 2016</div>
-                <h2>Quote</h2>
-                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
-              </div>
-            </div>
+<!--            <div class="timeline-item">-->
+<!--              <div class="timeline-img"></div>-->
+<!--              <div class="timeline-content js&#45;&#45;fadeInLeft">-->
+<!--                <div class="date">3 JUN 2016</div>-->
+<!--                <h2>Quote</h2>-->
+<!--                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>-->
+<!--              </div>-->
+<!--            </div>-->
          </div>
         </section>
         <hr/>
