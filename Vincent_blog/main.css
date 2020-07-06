@@ -1,0 +1,234 @@
+/** {*/
+/*  box-sizing: border-box;*/
+/*}*/
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  /* 需要隐藏最外层不可见区域以使视差生效 */
+  overflow: hidden;
+}
+header{
+  position: fixed;
+  right: 120px;
+  top: 20px;
+  z-index: 5;
+}
+
+
+ul {
+    /*position: absolute;*/
+    /*float:right;*/
+    /*top: 20px;*/
+    /*right: 110px;*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*overflow: hidden;*/
+    background-color: rgba(0,0,0,0);
+    z-index: 5;
+}
+
+li{
+  /*font-family: Times;*/
+  font-family: Ubuntu Mono, monospace;
+  /*font-size: 18px;*/
+  font-size: 1.3em;
+  display:inline-block;
+  color: white;
+  /*text-align: center;*/
+  padding: 14px 16px;
+  /*transition: 0.3s;*/
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.header-bar:hover {
+  color: #9fcdff;
+  /*text-decoration: underline;*/
+  /*background-color: #9fcdff;*/
+  transition: all 0.3s ease;
+  background-color: rgba(255,240,220, 0.1);
+  border-radius: 10px;
+}
+
+.header-bar::after{
+  content: "";
+	display: block;
+    background: linear-gradient(to right, #188eee, #999);
+    width: 100%;
+    height: 1px;
+}
+
+.header-icon{
+  margin: 0px 10px 0px;
+}
+
+body {
+  /*width: 100vw;*/
+  height: 100vh;
+  perspective: 100px;
+  transform-style: preserve-3d;
+  /* 3D的容器要允许overflow才能生效 */
+  overflow-y: auto;
+}
+
+.main {
+  /*display: flex;*/
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /*width: 80%;*/
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.list-item:hover .item-image::before  {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.item-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translateZ(-80px) scale(2.2);
+  z-index: -1;
+}
+
+.item-image::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.item-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.item-text {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+  /*font-family: Ubuntu Mono, monospace;*/
+  /*font-size: 18px;*/
+  text-align: center;
+  color: #ffffff;
+}
+
+.item-title {
+  font-size:2.5em;
+  font-weight: bold;
+  margin-bottom: 250px;
+  transition: font-size 0.3s ease-in-out;
+}
+
+/*.item-title:hover{*/
+/*  font-size: 3rem;*/
+/*  transition: all 0.3s ease;*/
+/*  color: #8fadcf;*/
+/*}*/
+
+/*.item-title:before{*/
+/*  font-size: 2em;*/
+/*  transition: all 0.3s ease;*/
+/*}*/
+
+.item-desc {
+  font-size: 1.2rem;
+}
+
+.contact{
+  position: absolute;
+  left: 10%;
+  bottom: 20%;
+  padding: 10px;
+  font-size: 1.5em;
+  color: black;
+  text-align: left;
+  border-radius: 20px;
+  border: #FFEFD7 solid 3px;
+}
+
+/*---------------------*/
+
+.content{
+  background: linear-gradient(45deg, #cfedef, #ffffff);
+  margin: 30px;
+  margin-top: -50px;
+  padding: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 16px 26px 0px rgba(0,0,0,0.3);
+}
+
+.content-title{
+  color: #2D93CA;
+  font-family: Ubuntu Mono, monospace;
+  /*text-align: center;*/
+  font-size: 2em;
+}
+
+.content-text{
+  font-family: Ubuntu Mono, monospace;
+  /*text-align: center;*/
+  font-size: 18px;
+}
+
+#portrait_out{
+  text-align: center;
+}
+#portrait{
+  float: left;
+  margin: 0px 140px 20px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+
+
+/*-------------*/
+.exp {
+  padding-top: 50px;
+  justify-content: center;
+}
+
+.item {
+  display: inline-block;
+  border-radius: 10px;
+  margin:35px;
+}
+
+#food-pic {
+  height: 180px;
+  /*width: 180px;*/
+  /*border: 3px white solid;*/
+  border-radius: 10px;
+}
+
+.description {
+  padding-top: 10px;
+  text-align: center;
+  /*color: white;*/
+  font-family: Ubuntu Mono, monospace;
+  /* text-transform: uppercase; */
+}

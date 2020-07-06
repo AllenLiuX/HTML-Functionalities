@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="shicha.css">
+    <link rel="stylesheet" href="main.css">
 <!--    <link rel="stylesheet" type="text/css" href="https://ianlunn.github.io/Hover/css/hover.css">-->
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+    <link rel="stylesheet" href="static/timeline.css">
+    <script src="static/jquery-3.4.1.js"></script>
+    <script src="static/popper-2.1.0.js"></script>
     <title>Vincent's Blog</title>
 </head>
 <body>
@@ -13,32 +17,150 @@
         <a href="https://allenliux01.wixsite.com/mrvs"><li class="header-bar">Music</li></a>
         <a href="https://github.com/AllenLiuX"><li class="header-bar">Projects</li></a>
         <li class="header-bar">Articles</li>
+        <a href="https://github.com/AllenLiuX"><img class="header-icon" src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/github-512.png" width="30"></a>
+        <a href="https://github.com/AllenLiuX"><img class="header-icon" src="images/youtube.png" width="30"></a>
     </ul>
 </header>
 <main>
     <section class="list-item">
         <div class="item-image">
-            <img src="images/mountain.png">
+            <img src="images/back2.JPG">
         </div>
         <div class="item-text">
-            <div class="item-title">「Vincent Blog」</div>
-            <div class="item-desc"></div>
+            <div class="item-title">Welcome to Vincent's Blog!</div>
+            <div class="item-desc">You'll see my experience, projects, and skill sets below &darr;</div>
         </div>
     </section>
-    <label class="contact">Contact Me</label>
+<!--    <label class="contact">Contact Me</label>-->
     <section class="content">
-        <div id="portrait_out"><img id="portrait" src="images/portrait.JPG" width="250px"></div>
+        <div id="portrait_out"><img id="portrait" src="images/portrait2.JPG" width="250px"></div>
         <h1 class="content-title">About Me</h1>
-        <p>Music expresses that which cannot be said and on which it is impossible to be silent”Music expresses that which cannot be said and on which it is impossible to be silent”</p>
+        <p class="content-text">Hi! This is Wenxuan Liu, aka Vincent.
+            <br>I am a junior Computer Science major student at UCLA. I like exploring new things.
+            <br>For now, my technical concentrations are <b>computer algorithms</b>, <b>web development</b>, <b>ASR</b>, and <b>data analysis</b>.
+            <br>I also do <b>music productions</b>. I mainly play the classic and pop piano, and I do guitar and drum accompany as well.
+            <br>For my leisure time, I play skateboard, do run training, and travel a lot.
+            <br>If you happen to be in Los Angeles, Shanghai, or Chengdu, come and talk to me!
+        </p>
+        <br><hr/>
+        <h1 class="content-title">Projects</h1>
+        <section class="timeline">
+          <div class="container">
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content timeline-card js--fadeInLeft">
+                <div class="timeline-img-header" id="ios">
+                      <h2>IOS Apps</h2>
+                </div>
+                <div class="date">Jul 2018 - 2019</div>
+                  <p><b>Object Classifier(CoreML)</b> <br>Take or upload photo and returns the result and probability of what the object might be.
+                      <br><b>AR Dice & AR Pokemon</b> <br>Use Unity modeling, movement designs and built-in AR models to roll a dice or simulate pokemon.
+                      <br><b>Precise Weather</b> <br>Use Json and API to access precise weather data by using current location or location search.
+                      <br><b>Happi</b> <br>A social media for idea collection with interface design and database on Google Firebase, developed with Rui Deng.
+                      <br><b>Other Apps</b><br>Quick Quiz App, Keyboard Music App, Chat App demo, etc.
+                  </p>
+                <a class="bnt-more" href="javascript:void(0)">More</a>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content timeline-card js--fadeInRight">
+                <div class="timeline-img-header" id="cpp">
+                  <h2>C++ Projects</h2>
+                </div>
+                <div class="date">Jan - Mar 2019</div>
+                <p><b>Genome Matcher</b><br>A Genome searching tool that searches through genomes and categorizes DNA sequences, based on algorithms and STLs.
+                    <p><b>Zombie Dash</b><br>A 2D game that hunt zombie, save citizen, set trap, and find exit. Implementing polymorphism and edge detection.
+                </p>
+                <a class="bnt-more" href="javascript:void(0)">More</a>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content timeline-card js--fadeInLeft">
+                <div class="timeline-img-header" id="maze">
+                      <h2>Mario Maze(3D WebGL)</h2>
+                </div>
+                <div class="date">Oct - Dec 2019</div>
+                  <p>A team project built with Yuan Shen and Ziyan Wang. This game let people to use keystrokes to walk and jump in a 3D maze, find keys, open gates, and find the exit. When exploring in the maze, the player will meet moving monsters and obstacles which could possibly wound player.
+                  <br><b>Personal Implementations</b><br> animation for obstacles based on 3D coordinates translations, scenes arrangement, UI interfaces, obj models, sound effects.
+                  </p>
+                <a class="bnt-more" href="javascript:void(0)">More</a>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content timeline-card js--fadeInRight">
+                <div class="timeline-img-header" id="c">
+                  <h2 id="black">C projects</h2>
+                </div>
+                <div class="date">Jan - Jun 2020</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+                <a class="bnt-more" href="javascript:void(0)">More</a>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content timeline-card js--fadeInLeft">
+                <div class="timeline-img-header" id="vs">
+                      <h2>Virtual Shelf</h2>
+                </div>
+                <div class="date">Mar 27 - 29 2020</div>
+                  <p>In cope of COVID-19, we built a website for searching stores’ storage with searchable stores and objects, teammates @Boyuan Ma, Stefan Li, Rui Deng.
+                      <br><b>Personal Implementations</b><br> Django framework between frontend and database, Search-Suggest JS, most HTML&CSS design and programming.
+                  </p>
+                <a class="bnt-more" href="javascript:void(0)">More</a>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-img"></div>
+              <div class="timeline-content js--fadeInLeft">
+                <div class="date">3 JUN 2016</div>
+                <h2>Quote</h2>
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
+              </div>
+            </div>
+         </div>
+        </section>
+        <hr/>
+        <h1 class="content-title">Experience</h1>
+        <div class="exp">
+          <div class = 'item'>
+              <a href=""><img id = food-pic src="images/sdsz.jpg" /></a>
+              <div class = "description">High School Education</div>
+          </div>
+          <div class = 'item'>
+              <a href=""><img id = food-pic src="images/ucla.jpeg" /></a>
+              <div class = "description">CS undergraduate</div>
+          </div>
+          <div class = 'item'>
+              <a href=""><img id = food-pic src="images/CMB.png" /></a>
+              <div class = "description">Data Analyst</div>
+          </div>
+          <div class = 'item'>
+              <a href=""><img id = food-pic src="images/un.png" /></a>
+              <div class = "description">United Nations UNIS Conference @Headquarter</div>
+            <div class = "description">Guest Speaker</div>
+          </div>
+          <div class = 'item'>
+              <a href=""><img id = food-pic src="images/welljoint.png@!f_200x200" /></a>
+              <div class = "description">WellJoint Technology Co.</div>
+              <div class = "description">ASR Team Leader</div>
+          </div>
+        </div>
+    </div>
     </section>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br>
     <p></p>
 </main>
 <footer>
-    <small>
-        <b>This Page</b> is @4/22/2020 by Wenxuan Liu(Vincent).
-    </small>
+    <div class="container">
+        <p class="m-0 text-center text-black-50">@Vincent's Blog 2020. Author: Wenxuan Liu(Vincent)</p>
+    </div>
 </footer>
 </body>
 </html>
