@@ -134,7 +134,15 @@ body {
 }
 
 #maze{
-  background: url("../images/maze.png") center center no-repeat;
+  background: url("../images/mario2.gif") center center no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
+}
+
+#python{
+  background: url("../images/tk2.gif") center center no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
