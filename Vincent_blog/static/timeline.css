@@ -23,7 +23,8 @@ body {
 
 .timeline-item {
   width: 100%;
-  margin-bottom: 70px;
+  margin-bottom: -100px;
+  /*!!change the distance*/
 }
 .timeline-item:nth-child(even) .timeline-content {
   float: right;
@@ -168,6 +169,16 @@ body {
   -o-background-size: cover;
   background-position: center 0;
 }
+
+#asr{
+  background: url("../images/asr.gif") center center no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
+}
+
+
 .timeline-img-header {
   height: 200px;
   position: relative;

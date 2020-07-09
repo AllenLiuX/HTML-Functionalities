@@ -8,11 +8,11 @@ function background(){
     // $("#background").attr('src', 'images/back.JPG');
 }
 
-function change(){
-    let backs = ['images/back2.JPG', 'images/back.JPG'];
-    i = (i+1)%backs.length;
-    $("#background").attr('src', backs[i]);
-}
+// function change(){
+//     let backs = ['images/back2.JPG', 'images/back.JPG'];
+//     i = (i+1)%backs.length;
+//     $("#background").attr('src', backs[i]);
+// }
 
 function opt(){
     if(j>=500){
@@ -20,7 +20,7 @@ function opt(){
     }
     else if (j<=15){
         direction = 1;
-        let backs = ['images/back2.JPG', 'images/back3.jpg', 'images/back4.JPG'];
+        let backs = ['../images/back2.JPG', '../images/back3.jpg', '../images/back4.jpg'];
         i = (i+1)%backs.length;
         $("#background").attr('src', backs[i]);
     }
