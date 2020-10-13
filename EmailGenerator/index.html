@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="generator12.css">
+    <script src="statics/jquery-3.4.1.js"></script>
+    <script src="generator12.js"></script>
+    <title>Email Generator</title>
+</head>
+<body onload="on()">
+<h1 class="page-title">Email Generator</h1>
+<!--<label id="dark">English</label>-->
+<!--    <div class="switch">-->
+<!--        <input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">-->
+<!--        <label for="cmn-toggle-4"></label>-->
+<!--    </div>-->
+<!--<label id="dark2">Groot</label>-->
+<form>
+    <input type="text" name="name" id="name" placeholder="Jay Chou">
+    <br>
+    <input type="text" name="company" id="company" placeholder="jvr.com">
+    <br>
+    <input type="button" value="Proceed" id="sub" onclick="generate()">
+    <input type="button" value="Reset" id="sub" onclick="reset()">
+</form>
+<div id="container">
+<!--    <p id="content">Email List</p>-->
+    <table border="0">
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>First+Last</td>
+            <td class='mail' id="e1"></td>
+            <td><button id="copyBT">copy</button></td>
+        </tr>
+        <tr>
+            <td>First.Last</td>
+            <td class='mail' id="e2"></td>
+            <td><button id="copyBT2">copy</button></td>
+        </tr>
+        <tr>
+            <td>First Initial + Last</td>
+            <td class='mail' id="e6"></td>
+            <td><button id="copyBT6">copy</button></td>
+        </tr>
+        <tr>
+            <td>First</td>
+            <td class='mail' id="e4"></td>
+            <td><button id="copyBT4">copy</button></td>
+        </tr>
+        <tr>
+            <td>Last</td>
+            <td class='mail' id="e5"></td>
+            <td><button id="copyBT5">copy</button></td>
+        </tr>
+        <tr>
+            <td>First_Last</td>
+            <td class='mail' id="e3"></td>
+            <td><button id="copyBT3">copy</button></td>
+        </tr>
+        <tr>
+            <td>First + Last Initial</td>
+            <td class='mail' id="e7"></td>
+            <td><button id="copyBT7">copy</button></td>
+        </tr><tr>
+            <td>Last + First Initial</td>
+            <td class='mail' id="e8"></td>
+            <td><button id="copyBT8">copy</button></td>
+        </tr><tr>
+            <td>First-Last</td>
+            <td class='mail' id="e9"></td>
+            <td><button id="copyBT9">copy</button></td>
+        </tr><tr>
+            <td>First Initial.Last</td>
+            <td class='mail' id="e10"></td>
+            <td><button id="copyBT10">copy</button></td>
+        </tr><tr>
+            <td>First.Last Initial</td>
+            <td class='mail' id="e11"></td>
+            <td><button id="copyBT11">copy</button></td>
+    </table>
+    <br>
+    <p id="all-txt">All:</p><br>
+    <p id="all"></p>
+    <button id="copyBT12">copy all</button>
+</div>
+<script type="text/javascript">
+    function copyArticle(event) {
+        const range = document.createRange();
+        range.selectNode(document.getElementById(event));
+        const selection = window.getSelection();
+        if(selection.rangeCount > 0) selection.removeAllRanges();
+        selection.addRange(range);
+        document.execCommand('copy');
+        // alert("复制成功！");
+    }
+    document.getElementById('copyBT').addEventListener('click', function () {copyArticle('e1');});
+    document.getElementById('copyBT2').addEventListener('click', function () {copyArticle('e2');});
+    document.getElementById('copyBT3').addEventListener('click', function () {copyArticle('e3');});
+    document.getElementById('copyBT4').addEventListener('click', function () {copyArticle('e4');});
+    document.getElementById('copyBT5').addEventListener('click', function () {copyArticle('e5');});
+    document.getElementById('copyBT6').addEventListener('click', function () {copyArticle('e6');});
+    document.getElementById('copyBT7').addEventListener('click', function () {copyArticle('e7');});
+    document.getElementById('copyBT8').addEventListener('click', function () {copyArticle('e8');});
+    document.getElementById('copyBT9').addEventListener('click', function () {copyArticle('e9');});
+    document.getElementById('copyBT10').addEventListener('click', function () {copyArticle('e10');});
+    document.getElementById('copyBT11').addEventListener('click', function () {copyArticle('e11');});
+    document.getElementById('copyBT12').addEventListener('click', function () {copyArticle('all');});
+</script>
+
+<!--<iframe width="760" height="455" id="yout" src="https://m.youtube.com/watch?v=-biOGdYiF-I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+<iframe width="760" height="455" id="yout" src="https://www.youtube.com/embed/-biOGdYiF-I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p id="sponsor">Sponsored by Jay Chou, JVR Music ®</p>
+</body>
+</html>
+
